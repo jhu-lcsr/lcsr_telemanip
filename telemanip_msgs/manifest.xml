@@ -1,0 +1,16 @@
+<package>
+  <description brief="telemanip_msgs">
+
+     telemanip_msgs
+
+  </description>
+  <author>Jonathan Bohren</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/telemanip_msgs</url>
+
+  <depend package="std_msgs"/>
+  <depend package="cartesian_trajectory_msgs"/>
+</package>
+
+

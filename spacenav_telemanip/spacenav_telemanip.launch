@@ -1,0 +1,15 @@
+<launch>
+  <node pkg="spacenav_telemanip" type="spacenav_telemanip.py" name="spacenav_telemanip" output="screen">
+    <param name="linear_multiplier" value="0.005"/>
+    <param name="angular_multiplier" value="0.05"/>
+    <param name="broadcast_rate" value="50"/>
+
+    <param name="frame_id" value="/world"/>
+    <param name="child_frame_id" value="telemanip_frame"/>
+
+    <param name="body_fixed" value="false"/>
+
+    <remap from="/joy" to="/spacenav/joy"/>
+    <remap from="/telemanip_command" to="/telemanip_cmd"/>
+  </node>
+</launch>

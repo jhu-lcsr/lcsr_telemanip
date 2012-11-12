@@ -1,0 +1,21 @@
+<package>
+  <description brief="spacenav_telemanip">
+
+     spacenav_telemanip
+
+  </description>
+  <author>Jonathan Bohren</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/spacenav_telemanip</url>
+
+  <depend package="rospy"/>
+  <depend package="kdl"/>
+  <depend package="tf"/>
+  <depend package="geometry_msgs"/>
+  <depend package="telemanip_msgs"/>
+  <depend package="sensor_msgs"/>
+
+</package>
+
+
