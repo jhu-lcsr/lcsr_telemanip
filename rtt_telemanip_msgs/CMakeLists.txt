@@ -8,4 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
 ros_generate_rtt_typekit(telemanip_msgs)
 ros_generate_rtt_service_proxies(telemanip_msgs)
 
-orocos_generate_package()
+orocos_generate_package(
+  DEPENDS telemanip_msgs
+  DEPENDS_TARGETS rtt_roscomm rtt_std_msgs
+)
