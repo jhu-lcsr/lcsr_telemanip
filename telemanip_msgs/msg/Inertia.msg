@@ -1,7 +1,7 @@
 # Mass [kg]
 float64 m
-# First mass moment [kg-m]
-geometry_msgs/Vector3 h
+# Center of mass [m]
+geometry_msgs/Vector3 com
 # Inertia Tensor [kg-m^2]
 #     | ixx ixy ixz |
 # I = | ixy iyy iyz |
