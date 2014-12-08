@@ -2,8 +2,8 @@
 Changelog for package rtt_telemanip_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2014-12-08)
+------------------
 * updating typekit cmakelists
 * merge
 * fixing deps
