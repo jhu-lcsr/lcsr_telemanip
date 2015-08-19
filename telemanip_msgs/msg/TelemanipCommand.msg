@@ -12,6 +12,9 @@ bool augmenter_engaged
 # Gripper opening 0.0:closed - 1.0:open
 float64 grasp_opening
 
+# Gripper-specific grasp synergies for higher-dof grippers
+#float64[] grasp_synergies
+
 # Safety flags
 bool deadman_engaged # True if the deadman is being held
 bool estop           # True if the estop has been pressed
