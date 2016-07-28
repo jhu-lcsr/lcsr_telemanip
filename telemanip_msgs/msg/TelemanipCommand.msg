@@ -3,18 +3,16 @@ Header header
 # End-effector position and velocity
 cartesian_trajectory_msgs/PoseTwist posetwist
 
-# TODO: Remove this flag
-bool resync_pose
-
-# If true: augment the command with autonomous control
-bool augmenter_engaged
-
 # Gripper opening 0.0:closed - 1.0:open
 float64 grasp_opening
 
-# Gripper-specific grasp synergies for higher-dof grippers
-#float64[] grasp_synergies
+# Mode Flags
+# If true: feed the commands forward as manual control
+bool deadman_engaged
+# If true: interpret high-level commands with augmenter classifiers
+bool augmenter_engaged
 
-# Safety flags
-bool deadman_engaged # True if the deadman is being held
-bool estop           # True if the estop has been pressed
+# High-Level Commands
+bool emergency_stop      # put the arm into a safe stop mode
+bool interrupt_augmenter # preempt any tunning augmenter taskels
+bool attempt_rescue      # plan a collision-free path to return the arm to the last commanded pose
