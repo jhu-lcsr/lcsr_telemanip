@@ -16,3 +16,6 @@ bool augmenter_engaged
 bool emergency_stop      # put the arm into a safe stop mode
 bool interrupt_augmenter # preempt any tunning augmenter taskels
 bool attempt_rescue      # plan a collision-free path to return the arm to the last commanded pose
+
+# Local stamp (for acking)
+time local_stamp
